@@ -1,0 +1,5 @@
+7/20/2023, 8:42:22 AM: SequelizeDatabaseError: Unknown column 'departments.name' in 'where clause'
+7/20/2023, 8:42:22 AM: SequelizeDatabaseError: Unknown column 'departments.name' in 'where clause'
+7/20/2023, 8:42:54 AM: SequelizeDatabaseError: Unknown column 'departments.name' in 'where clause'
+7/20/2023, 8:44:45 AM: SequelizeDatabaseError: Unknown column 'departments.name' in 'where clause'
+7/20/2023, 12:48:33 PM: SequelizeDatabaseError: Unknown column 'lot' in 'field list'

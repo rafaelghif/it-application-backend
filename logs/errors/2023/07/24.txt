@@ -1,0 +1,7 @@
+7/24/2023, 9:08:46 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:08:46 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:08:50 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:08:58 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:09:00 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:09:21 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
+7/24/2023, 9:10:05 AM: SequelizeDatabaseError: Unknown column 'DiskDrive.diskType' in 'where clause'
