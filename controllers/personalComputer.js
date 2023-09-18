@@ -42,6 +42,9 @@ export const getPersonalComputers = async (req, res) => {
             }, {
                 model: models.Location,
                 attributes: ["id", "name"]
+            }, {
+                model: models.OperatingSystem,
+                attributes: ["id", "version"]
             }]
         });
 

@@ -8,12 +8,12 @@ const PersonalComputer = connectionDatabase.define("PersonalComputer", {
         defaultValue: DataTypes.UUIDV4
     },
     assetNo: {
-        type: DataTypes.STRING(20),
+        type: DataTypes.STRING(70),
         allowNull: true,
         defaultValue: null
     },
     invoiceNo: {
-        type: DataTypes.STRING(25),
+        type: DataTypes.STRING(70),
         allowNull: true,
         defaultValue: null
     },
