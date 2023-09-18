@@ -44,7 +44,7 @@ export const getPersonalComputers = async (req, res) => {
                 attributes: ["id", "name"]
             }, {
                 model: models.OperatingSystem,
-                attributes: ["id", "version"]
+                attributes: ["id", "name", "version"]
             }]
         });
 
