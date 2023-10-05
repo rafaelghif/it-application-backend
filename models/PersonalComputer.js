@@ -131,6 +131,10 @@ const PersonalComputer = connectionDatabase.define("PersonalComputer", {
             this.setDataValue("remark", val || null);
         }
     },
+    category: {
+        type: DataTypes.ENUM("Unspecified", "Server", "Personal Computer", "Laptop"),
+        defaultValue: "Unspecified"
+    },
     inActive: {
         type: DataTypes.BOOLEAN,
         defaultValue: false

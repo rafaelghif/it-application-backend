@@ -130,6 +130,10 @@ const PersonalComputerHistory = connectionDatabase.define("PersonalComputerHisto
             this.setDataValue("remark", val || null);
         }
     },
+    category: {
+        type: DataTypes.ENUM("Unspecified", "Server", "Personal Computer", "Laptop"),
+        defaultValue: "Unspecified"
+    },
     inActive: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
