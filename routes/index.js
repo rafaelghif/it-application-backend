@@ -12,6 +12,7 @@ import physicalMemoryRouter from "./physicalMemory.js";
 import categoryRouter from "./category.js";
 import subCategoryRouter from "./subCategory.js";
 import softwareRouter from "./software.js";
+import computerSoftwareRouter from "./computerSoftware.js";
 
 const router = Router();
 
@@ -28,5 +29,6 @@ router.use("/disk-drive", diskDriveRouter);
 router.use("/network-adapter", networkAdapterRouter);
 router.use("/physical-memory", physicalMemoryRouter);
 router.use("/software", softwareRouter);
+router.use("/computer-software", computerSoftwareRouter);
 
 export default router;

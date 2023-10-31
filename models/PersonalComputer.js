@@ -131,6 +131,14 @@ const PersonalComputer = connectionDatabase.define("PersonalComputer", {
             this.setDataValue("remark", val || null);
         }
     },
+    additionalSoftware: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+        defaultValue: null,
+        set(val) {
+            this.setDataValue("additionalSoftware", val || null);
+        }
+    },
     category: {
         type: DataTypes.ENUM("Unspecified", "Server", "Personal Computer", "Laptop"),
         defaultValue: "Unspecified"

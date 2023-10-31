@@ -19,6 +19,14 @@ export const Software = connectionDatabase.define("Software", {
         type: DataTypes.ENUM("Subscription", "Perpetual"),
         allowNull: false
     },
+    productKey: {
+        type: DataTypes.STRING(50),
+        allowNull: true,
+        defaultValue: null,
+        set(val) {
+            this.setDataValue("productKey", val || null);
+        }
+    },
     startDate: {
         type: DataTypes.DATEONLY,
         allowNull: false
@@ -38,6 +46,10 @@ export const Software = connectionDatabase.define("Software", {
         set(val) {
             this.setDataValue("remark", val || null);
         }
+    },
+    isAssigned: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
     },
     inActive: {
         type: DataTypes.BOOLEAN,

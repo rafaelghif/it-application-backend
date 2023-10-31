@@ -13,6 +13,7 @@ import SubCategory from "./SubCategory.js";
 import Category from "./Category.js";
 import Software from "./Software.js";
 import PersonalComputerHistory from "./PersonalComputerHistory.js";
+import ComputerSoftware from "./ComputerSoftware.js";
 
 const models = {};
 
@@ -29,6 +30,7 @@ models.PhysicalMemory = PhysicalMemory;
 models.DiskDrive = DiskDrive;
 models.NetworkAdapter = NetworkAdapter;
 models.Software = Software;
+models.ComputerSoftware = ComputerSoftware;
 
 // connectionDatabase.sync({ force: true }).then(async () => {
 //     await initialValue();
@@ -67,5 +69,8 @@ models.SubCategory.belongsTo(models.Category, { onUpdate: "CASCADE", onDelete: "
 
 models.PersonalComputer.hasMany(models.PersonalComputerHistory);
 models.PersonalComputerHistory.belongsTo(models.PersonalComputer);
+
+models.PersonalComputer.belongsToMany(models.Software, { through: models.ComputerSoftware, onUpdate: "CASCADE", onDelete: "CASCADE" });
+models.Software.belongsToMany(models.PersonalComputer, { through: models.ComputerSoftware, onUpdate: "CASCADE", onDelete: "CASCADE" });
 
 export default models;
